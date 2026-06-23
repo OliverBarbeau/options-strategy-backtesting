@@ -79,6 +79,8 @@ Headline backtest returns look high, but they are **gross** — realistic fricti
 7. **Earnings gaps destroy buffers** — filter trades with earnings in the hold period.
 8. **Friction is real** — $0.65/leg + 2% slippage eats ~40% of gross P/L.
 
+See **[FINDINGS.md](FINDINGS.md)** for a plain-language write-up of the methodology and these findings in more depth.
+
 ## Project structure
 
 ```
