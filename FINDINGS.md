@@ -1,8 +1,6 @@
 # Findings
 
-A plain-language summary of what this project set out to test, how the results
-were validated, and what held up, for readers who would rather not dig through
-the code. Everything here is **backtested research on historical data**, not live
+Everything here is **backtested research on historical data**, not live
 trading and not financial advice.
 
 ## The question
