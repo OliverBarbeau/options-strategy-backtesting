@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+wheels/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+venv/
+env/
+.venv/
+ENV/
+
+# Data caches & generated files
+data/cache/
+data/theta_cache/
+data/*.parquet
+data/price_verification.jsonl
+data/calibration_log.jsonl
+data/calibration_test.jsonl
+
+# Simulation account state (generated, not source)
+accounts/*.json
+!accounts/archive/.gitkeep
+
+# Theta Terminal runtime (third-party, contains credentials)
+theta-data/
+
+# Secrets and credentials
+.env
+.env.local
+config/schwab.json
+config/schwab_token.json
+config/theta_data.json
+config/*.json
+!config/*.example.json
+!config/README.md
+
+# Node / Next.js
+web/node_modules/
+web/.next/
+web/out/
+web/build/
+web/dist/
+web/.turbo/
+web/.env*.local
+web/*.log
+web/.vercel
+web/next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS
+*.tmp
+*.temp
+*.log
+
+# Archives of old data dumps
+*.zip
+drive-download-*.zip
+"Copy of *"
+
+# Old notebook artifacts (archived to notebooks/)
+*.ipynb_checkpoints
+
+# Research outputs (keep experiments, ignore their generated artifacts)
+experiments/*.png
+experiments/*.csv
+experiments/output/
+
+# --- Public-repo hardening ---
+# Local agent worktrees / tooling
+.claude/
+
+# Vendor-derived market data (do not redistribute) and generated account state
+data/*.jsonl
+accounts/archive/*.json
+
+# Personal trade / performance data must never be committed
+olivers trades/
+**/real_options_trades*.csv
+**/real_weekly_performance*.csv
+tests/fixtures/real_*
+*.xlsx

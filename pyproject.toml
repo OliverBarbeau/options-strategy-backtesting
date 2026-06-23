@@ -1,0 +1,35 @@
+[project]
+name = "tradelab"
+version = "0.1.0"
+description = "Options backtesting, pricing, and strategy-research toolkit"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "requests>=2.28",
+    "scipy>=1.11",
+    "yfinance>=0.2",
+    "ccxt>=4.0",
+    "pyarrow>=14.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "matplotlib>=3.7",
+]
+api = [
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+    "pydantic-settings>=2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "network: tests that require network access (yfinance, ccxt)",
+]
